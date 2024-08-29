@@ -12,4 +12,5 @@
     <x-nav/>
 {{$slot}}
 </body>
+@stack('js')
 </html>

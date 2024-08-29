@@ -2,6 +2,9 @@
 @use 'obracivil';
 @use 'tarjetas';
 
+
+
+
 .header {
     min-height:750px;
     display: flex;
@@ -39,7 +42,7 @@
 
 .nosotros {
 
-    min-height: 900px;
+    min-height: 960px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,7 +85,7 @@
 .obracivil {
     position: relative;
 
-    min-height: 700px;
+    min-height: 800px;
     overflow: hidden;
     .obra__civil {
         padding: 3em 0;
@@ -91,35 +94,86 @@
 
         gap: 20px;
 
-        position: absolute;
         left: 70px;
 
         .elemento1 {
             background-color: colores.$brown;
             color: #fff;
+
         }
 
         .elemento2 {
             background-color: colores.$deeporange;
             color: #fff;
+
         }
 
         .elemento3 {
             background-color: colores.$lightorange;
             color: colores.$brown
 
+
         }
 
         .elemento4 {
             background-color: colores.$brown;
             color: #fff;
+
         }
     }
 
 
+} @media (max-width:900px) {
+    .obracivil {
+        padding-top: 6em;
+    }
+}
+@media (max-width:767px) {
+    .obracivil {
+        padding-top: 10em;
+    }
 }
 
+.carrusel__anterioruno {
+    position: absolute;
+    bottom:60px;
+    right: 50%;
 
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: colores.$deeporange;
+    color: #fff;
+    opacity: .4;
+    transition: .5s ease;
+} .carrusel__anterioruno:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.carrusel__siguienteuno {
+    position: absolute;
+    bottom:60px;
+    right: 45%;
+
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: colores.$deeporange;
+    color: #fff;
+    opacity: .4;
+    transition: .5s ease;
+}.carrusel__siguienteuno:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+.ornament {
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
 
 
 .obrapublica {
@@ -132,7 +186,9 @@
     background-image: url(/public/img/fondo.svg);
     background-position: center;
     background-repeat: no-repeat;
-overflow: hidden;
+    overflow: hidden;
+
+
     .contenido {
     display: flex;
     flex-direction: column;
@@ -149,23 +205,103 @@ overflow: hidden;
 
 }
 
+} @media (max-width:900px) {
+    .obrapublica {
+        padding-top: 6em;
+    }
+}
+@media (max-width:767px) {
+    .obrapublica {
+        padding-top: 10em;
+    }
 }
 
-.obras {
+.flechas {
+    position: relative;
+    .carrusel__anterior {
+        position: absolute;
+        bottom: 0px;
+        right: 55%;
+
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        border: none;
+        background-color: colores.$deeporange;
+        color: #fff;
+        opacity: .4;
+        transition: .5s ease;
+    } .carrusel__anterior:hover {
+        opacity: 1;
+        transition: .5s ease;
+    }
+
+    .carrusel__siguiente {
+        position: absolute;
+        bottom: 0px;
+        right: 45%;
+
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        border: none;
+        background-color: colores.$deeporange;
+        color: #fff;
+        opacity: .4;
+        transition: .5s ease;
+    }.carrusel__siguiente:hover {
+        opacity: 1;
+        transition: .5s ease;
+    }
+
+}
+
+.carrusel-track {
     display: flex;
     flex-direction: row;
+
+    align-items: center;
     gap: 20px;
+
+    min-height: 500px;
+
 }
 
 .footer {
-    min-height: 400px;
+    min-height: 550px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     .contenido {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 50px;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+    hr {
+        border: solid 1px #000;
+        width: 100%;
+
+    }
+}
+
+.footernav {
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .copyright {
+        min-height: 100px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 }
