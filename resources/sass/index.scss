@@ -1,0 +1,171 @@
+@use 'colores';
+@use 'obracivil';
+@use 'tarjetas';
+
+.header {
+    min-height:750px;
+    display: flex;
+    flex-direction: row;
+    padding: 5em 0 0 0;
+
+    justify-content: center;
+    align-items: center;
+    .datos-duros {
+        position: relative;
+        min-height: 550px;
+        h1 {
+            font-size: 5em;
+        }
+        p {
+            width: 90%;
+            color: colores.$gray;
+        }
+    }
+    .cv {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        position: absolute;
+        bottom: 50px;
+        .bullet {
+            text-align: center;
+            h2 {
+                color: colores.$deeporange;
+            }
+
+        }
+    }
+}
+
+.nosotros {
+
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .info {
+        position: relative;
+        min-height: 150px;
+        p {
+            width: 60%;
+            position: absolute;
+            left: 50px;
+            color: colores.$gray;
+        }
+    }
+   .bullets {
+    min-height: 300px;
+    position: relative;
+        .bullets__info {
+            position: absolute;
+            left: 50px;
+
+            .work {
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+
+                gap: 20px;
+                padding: 2em 0;
+                .work__info {
+                    .descripcion {
+                    width: 70%;
+                    color: colores.$gray;
+                }
+                }
+            }
+        }
+   }
+}
+
+.obracivil {
+    position: relative;
+
+    min-height: 700px;
+    overflow: hidden;
+    .obra__civil {
+        padding: 3em 0;
+        display: flex;
+        flex-direction: row;
+
+        gap: 20px;
+
+        position: absolute;
+        left: 70px;
+
+        .elemento1 {
+            background-color: colores.$brown;
+            color: #fff;
+        }
+
+        .elemento2 {
+            background-color: colores.$deeporange;
+            color: #fff;
+        }
+
+        .elemento3 {
+            background-color: colores.$lightorange;
+            color: colores.$brown
+
+        }
+
+        .elemento4 {
+            background-color: colores.$brown;
+            color: #fff;
+        }
+    }
+
+
+}
+
+
+
+
+.obrapublica {
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(/public/img/fondo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+overflow: hidden;
+    .contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 3.5em;
+    h2 {
+    font-size: 3.5em;
+    color: colores.$brown;
+}
+    p {
+    width: 80%;
+    color: colores.$brown;
+}
+
+}
+
+}
+
+.obras {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer {
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

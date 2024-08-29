@@ -1,0 +1,36 @@
+@use 'colores';
+
+.tarjeta {
+    background-color: #fefefe;
+    width: 300px;
+    height: 380px;
+
+    border-radius: 1em;
+    padding: 2em 1em;
+
+    color: colores.$gray;
+    position: relative;
+}
+
+.tarjeta .circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: .4em;
+    font-size: 3em;
+
+    position: absolute;
+    color: colores.$deeporange;
+
+    top: -50px;
+    right: 41%;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.11);
+
+
+}

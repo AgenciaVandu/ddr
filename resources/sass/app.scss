@@ -1,0 +1,23 @@
+@use 'colores';
+@import 'bootstrap/scss/bootstrap';
+
+
+.ddr-bg {
+    background-color: #fff;
+    .navbar-nav {
+        gap: 35px;
+    }
+}
+
+.btn-primary {
+    background-color: colores.$deeporange;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: colores.$brown;
+    }
+}
+
+
+

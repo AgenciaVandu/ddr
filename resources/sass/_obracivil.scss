@@ -1,0 +1,23 @@
+@use 'colores';
+
+.contenedor {
+
+    width: 380px;
+    height: 560px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 2em;
+    .titular {
+        padding-top: 1em;
+    }
+    .informacion {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .bullet {
+            line-height: 5px;
+        }
+    }
+}
