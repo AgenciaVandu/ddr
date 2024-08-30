@@ -78,6 +78,13 @@ new Glider(document.querySelector('.carrusel-track'), {
       {
         breakpoint: 390,
         settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 350,
+        settings: {
           slidesToShow: 1.1,
           slidesToScroll: 1
         }

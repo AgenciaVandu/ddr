@@ -14,7 +14,7 @@
                     <a class="nav-link" href="#">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos de obra civil</a>
+                    <a class="nav-link" href="#">Proyectos de obra pública</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Proyectos de obra privada</a>

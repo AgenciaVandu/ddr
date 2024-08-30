@@ -7,12 +7,9 @@
     <div class="informacion">
         <div class="bullet">
             <h5>{{$tipodeproyecto ?? 'No disponible'}}</h5>
-            <small>Tipo de proyecto</small>
+            <small>PROYECTO</small>
         </div>
-        <div class="bullet">
-            <h5>{{$duracion ?? 'No disponible'}}</h5>
-            <small>Tipo de proyecto</small>
-        </div>
+
         <div class="bullet">
             <h5>{{$lugarobra ?? 'No disponible'}}</h5>
             <small>Locación</small>
@@ -20,6 +17,7 @@
     </div>
 
     <div class="botoncta">
-        <a href="" class="btn btn-secondary">Descargar curriculum</a>
+        <a href="" class="btn btn-secondary">Descargar curriculum
+            <span class="m-auto"><img src="{{asset('img/arrow-right.svg')}}" width="25" alt=""></span></a>
     </div>
 </div>

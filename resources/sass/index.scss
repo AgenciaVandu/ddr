@@ -2,6 +2,22 @@
 @use 'obracivil';
 @use 'tarjetas';
 
+@font-face {
+    font-family: 'montserrat bold';
+    src: url('/public/font/Montserrat-Bold.otf');
+}
+
+@font-face {
+    font-family: 'montserrat light';
+    src: url('/public/font/Montserrat-Light.otf');
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Montserrat bold';
+}
+p {
+    font-family: 'Montserrat light';
+}
 
 
 
@@ -9,7 +25,7 @@
     min-height:750px;
     display: flex;
     flex-direction: row;
-    padding: 5em 0 0 0;
+    padding: 6em 0 0 0;
 
     justify-content: center;
     align-items: center;
@@ -17,11 +33,18 @@
         position: relative;
         min-height: 550px;
         h1 {
-            font-size: 5em;
+            font-size: 3.5em;
         }
-        p {
+        @media (max-width:522px) {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+        .descripcion {
             width: 90%;
             color: colores.$gray;
+            margin-bottom: 1em;
+            font-size: .8em;
         }
     }
     .cv {
@@ -36,6 +59,21 @@
                 color: colores.$deeporange;
             }
 
+        }
+    }
+    @media (max-width:1199px) {
+        .cv {
+            bottom: -30px;
+        }
+    }
+    @media (max-width:991px) {
+        .cv {
+            bottom: 50px;
+        }
+    }
+    @media (max-width:380px) {
+        .cv {
+            bottom: 0px;
         }
     }
 }
@@ -136,7 +174,7 @@
 
 .carrusel__anterioruno {
     position: absolute;
-    bottom:60px;
+    bottom:40px;
     right: 50%;
 
     height: 40px;
@@ -154,7 +192,7 @@
 
 .carrusel__siguienteuno {
     position: absolute;
-    bottom:60px;
+    bottom:40px;
     right: 45%;
 
     height: 40px;

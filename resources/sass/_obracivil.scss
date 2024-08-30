@@ -3,12 +3,14 @@
 .contenedor {
 
     width: 350px;
-    height: 560px;
+    height: 590px;
 
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 30px;
     padding: 2em;
+
+    position: relative;
     .titular {
         padding-top: 1em;
     }
@@ -16,9 +18,28 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+
+        position: absolute;
+        bottom: 150px;
         .bullet {
-            line-height: 5px;
+            text-transform: uppercase;
+            line-height: 15px;
         }
+    }
+
+    .btn-secondary{
+        position: absolute;
+        bottom: 50px;
+
+        background-color: transparent;
+        border: none;
+        transition: .3s ease;
+        border-radius: 2em;
+
+        padding: .3em .9em;
+    } .btn-secondary:hover {
+        background-color: colores.$darkgray;
+        transition: .3s ease;
     }
 }
 
