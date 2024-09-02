@@ -14,10 +14,10 @@
                     <a class="nav-link" href="#">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos de obra pública</a>
+                    <a class="nav-link" href="#">Proyectos de obra civil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Proyectos de obra privada</a>
+                    <a class="nav-link">Proyectos de infraestructura</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Contacto</a>

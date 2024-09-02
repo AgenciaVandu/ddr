@@ -73,12 +73,12 @@ new Glider(document.querySelector('.obra__civil'), {
       {
         breakpoint: 390,
         settings: {
-          slidesToShow: 1.1,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 350,
+        breakpoint: 320,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

@@ -38,7 +38,7 @@
                     <h2>CONSTRUYENDO VALOR <br> DESDE EL AÑO 2008.</h2>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 info">
-                    <p>Trabajamos en apego a nuestra identidad y filosofía empresarial.</p>
+                    <p class="parrafo_info">Trabajamos en apego a nuestra identidad y filosofía empresarial.</p>
                 </div>
             </div>
             <div class="row">
@@ -72,39 +72,6 @@
             <h2 class="pt-4">Algunos proyectos desarrollados de manera exitosa</h2>
         </div>
         <div class="obra__civil">
-            <div class="elemento1">
-                <x-obraprivada>
-                    <x-slot name="obracivil">
-                        Gobierno del <br> Estado de Yucatán
-                    </x-slot>
-                    <x-slot name="obracivildescripcion">
-                        Desarrollo de Ingeniería y Construcción de infraestructura para soportar y operar el sistema de Video Vigilancia y Control de Acceso CENTRO INTERNACIONAL DE CONGRESOS YUCATAN (BY SAMSUNG)
-                    </x-slot>
-                    <x-slot name="tipodeproyecto">
-                       CENTRO INTERNACIONAL DE CONGRESOS YUCATAN
-                    </x-slot>
-                    <x-slot name="lugarobra">
-                        Yucatán, México
-                    </x-slot>
-                </x-obraprivada>
-            </div>
-            <div class="elemento2">
-                <x-obraprivada>
-                    <x-slot name="obracivil">
-                        Litoteca <br> Nacional
-                    </x-slot>
-                    <x-slot name="obracivildescripcion">
-                        Suministro de 2,000 ml de canalización, ductería eléctrica, voz y datos, ubicado en el parque científico y tecnológico de Yucatán.
-                    </x-slot>
-                    <x-slot name="tipodeproyecto">
-                        Canalización ductería eléctrica, voz y datos.
-                    </x-slot>
-
-                    <x-slot name="lugarobra">
-                        yucatán, México
-                    </x-slot>
-                </x-obraprivada>
-            </div>
             <div class="elemento3">
                 <x-obraprivada>
                     <x-slot name="obracivil">
@@ -122,7 +89,7 @@
                     </x-slot>
                 </x-obraprivada>
             </div>
-            <div class="elemento4">
+            <div class="elemento2">
                 <x-obraprivada>
                     <x-slot name="obracivil">
                         Junta de Agua Potable y Alcantarillado de Yucatán
@@ -139,6 +106,41 @@
                     </x-slot>
                 </x-obraprivada>
             </div>
+            <div class="elemento1">
+                <x-obraprivada>
+                    <x-slot name="obracivil">
+                        IDEFEY
+                    </x-slot>
+                    <x-slot name="obracivildescripcion">
+                        Rehabilitación de aulas, incluyendo paredes, techos, pisos, accesos para discapacitados, instalaciones eléctricas y de aire acondicionado.
+                    </x-slot>
+                    <x-slot name="tipodeproyecto">
+                        Mejoramiento de escuela primaria.
+                    </x-slot>
+                    <x-slot name="lugarobra">
+                        Chelem, Yucatán
+                    </x-slot>
+                </x-obraprivada>
+            </div>
+            <div class="elemento2">
+                <x-obraprivada>
+                    <x-slot name="obracivil">
+                        Ayuntamiento <br> de Mérida
+                    </x-slot>
+                    <x-slot name="obracivildescripcion">
+                        Demolición de baños anteriores, reconstrucción y rehabilitación de baños, incluyendo obra civil, instalaciones sanitarias, hidráulicas y eléctricas.
+                    </x-slot>
+                    <x-slot name="tipodeproyecto">
+                        Remodelación de baños en Mercados Municipales ubicados en diversas localidades
+                    </x-slot>
+
+                    <x-slot name="lugarobra">
+                        mérida, México
+                    </x-slot>
+                </x-obraprivada>
+            </div>
+
+
         </div>
         <button aria-label="anterior" class="carrusel__anterioruno">
             < </button>
@@ -146,7 +148,7 @@
                     >
                 </button>
 
-                <div class="ornament">
+                <div class="ornament d-none d-sm-none d-md-none d-lg-block">
                     <img src="{{asset('img/Ornament.png')}}" width="200" alt="">
                 </div>
     </section>
@@ -156,10 +158,8 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 m-auto pb-5">
                     <div class="contenido">
-                        <h2>Lorem ipsum <br>dolor sit.</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam et numquam sed maiores
-                            eligendi
-                            consequatur!</p>
+                        <h2> PROYECTOS DE <br> INFRAESTRUCTURA</h2>
+                        <p>De igual manera hemos desarrollado diversos proyectos de infraestructura de voz y datos, audio y video.</p>
                         <div class="cta">
                             <x-cta />
                         </div>
@@ -170,15 +170,24 @@
                         <div class="obra">
                             <x-obra>
                                 <x-slot name="descripcionobra">
-                                    Construcción de 80 sanitarios rurales, de 2.05 x 2.20 metros, incluye fosa de
-                                    absorción
-                                    de 1.8 y 1.00mts de mampostería, tanque séptico biodigestor auto impermeable de
-                                    600lts y
-                                    tinaco de 450 litros para almacenamiento de agua potable. Así como muebles de baño,
-                                    registros, alimentación hidráulica y sanitaria en la localidad de Sihó.
+                                    Desarrollo de Ingeniería y Construcción de infraestructura para soportar y operar el sistema de Video Vigilancia y Control de Acceso.
+
                                 </x-slot>
                                 <x-slot name="tituloobra">
-                                    <b>Halachó</b>
+                                    <b>CENTRO INTERNACIONAL DE CONGRESOS</b>
+                                </x-slot>
+                                <x-slot name="cityobra">
+                                    Yucatán, México
+                                </x-slot>
+                            </x-obra>
+                        </div>
+                        <div class="obra">
+                            <x-obra>
+                                <x-slot name="descripcionobra">
+                                    Canalización ductería eléctrica, voz y datos para el edificio de la LITOTECA NACIONAL ubicado en el Parque Científico y Tecnológico de Yucatán
+                                </x-slot>
+                                <x-slot name="tituloobra">
+                                    <b>Litoteca Nacional</b>
                                 </x-slot>
                                 <x-slot name="cityobra">
                                     Yucatán
@@ -188,54 +197,26 @@
                         <div class="obra">
                             <x-obra>
                                 <x-slot name="descripcionobra">
-                                    Construcción de 80 sanitarios rurales, de 2.05 x 2.20 metros, incluye fosa de
-                                    absorción
-                                    de 1.8 y 1.00mts de mampostería, tanque séptico biodigestor auto impermeable de
-                                    600lts y
-                                    tinaco de 450 litros para almacenamiento de agua potable. Así como muebles de baño,
-                                    registros, alimentación hidráulica y sanitaria en la localidad de Sihó.
+                                    Instalación de ductería y nodos para red de voz y datos, audio y video; instalación de circuitos eléctricos, certificación de la red.
                                 </x-slot>
                                 <x-slot name="tituloobra">
-                                    <b>Halachó</b>
+                                    <b>PEMEX</b>
                                 </x-slot>
                                 <x-slot name="cityobra">
-                                    Yucatán
+                                    Paraíso, Tabasco
                                 </x-slot>
                             </x-obra>
                         </div>
                         <div class="obra">
                             <x-obra>
                                 <x-slot name="descripcionobra">
-                                    Construcción de 80 sanitarios rurales, de 2.05 x 2.20 metros, incluye fosa de
-                                    absorción
-                                    de 1.8 y 1.00mts de mampostería, tanque séptico biodigestor auto impermeable de
-                                    600lts y
-                                    tinaco de 450 litros para almacenamiento de agua potable. Así como muebles de baño,
-                                    registros, alimentación hidráulica y sanitaria en la localidad de Sihó.
+                                    Suministro e instalación de cableado estructurado en el edificio, centro de datos y sitios.
                                 </x-slot>
                                 <x-slot name="tituloobra">
-                                    <b>Halachó</b>
+                                    <b>Instituto Tecnológico Superior de Comalcalco.</b>
                                 </x-slot>
                                 <x-slot name="cityobra">
-                                    Yucatán
-                                </x-slot>
-                            </x-obra>
-                        </div>
-                        <div class="obra">
-                            <x-obra>
-                                <x-slot name="descripcionobra">
-                                    Construcción de 80 sanitarios rurales, de 2.05 x 2.20 metros, incluye fosa de
-                                    absorción
-                                    de 1.8 y 1.00mts de mampostería, tanque séptico biodigestor auto impermeable de
-                                    600lts y
-                                    tinaco de 450 litros para almacenamiento de agua potable. Así como muebles de baño,
-                                    registros, alimentación hidráulica y sanitaria en la localidad de Sihó.
-                                </x-slot>
-                                <x-slot name="tituloobra">
-                                    <b>Halachó</b>
-                                </x-slot>
-                                <x-slot name="cityobra">
-                                    Yucatán
+                                    Comalcalco, Tabasco
                                 </x-slot>
                             </x-obra>
                         </div>
@@ -262,15 +243,15 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 contenido m-auto">
                     <div class="elemento">
                         <h5>Dirección</h5>
-                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vel?</small>
+                        <p><a href="https://maps.app.goo.gl/Cc2HYr14wFx2TsoN8">Calle 43 # 203 entre 48 y 50, <br> Col Benito Juárez Norte, CP 97119. Mérida, Yucatán</a></p>
                     </div>
                     <div class="elemento">
                         <h5>Email</h5>
-                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vel?</small>
+                        <p><a href="mailto:proyectos@ddrproyectos.mx">proyectos@ddrproyectos.mx</a></p>
                     </div>
                     <div class="elemento">
                         <h5>Phone</h5>
-                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vel?</small>
+                        <p><a href="tel:9999213228">+52 (999) 921 32 28</a></p>
                     </div>
 
                 </div>

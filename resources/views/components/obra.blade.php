@@ -1,7 +1,7 @@
 
 <div class="tarjeta">
     <div class="circle">"</div>
-    <small>{{$descripcionobra ?? 'No disponible'}}</small>
+    <p class="parrafo">{{$descripcionobra ?? 'No disponible'}}</p>
     <hr>
     <small>
         <span>{{$tituloobra ?? 'No disponible'}}</span>
