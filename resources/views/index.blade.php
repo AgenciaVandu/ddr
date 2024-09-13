@@ -1,7 +1,6 @@
 @push('css')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     @vite(['resources/sass/app.scss', 'resources/sass/index.scss', 'resources/js/app.js'])
-
 @endpush
 <x-layouts.guest>
     <header class="header">
@@ -9,10 +8,19 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 datos-duros">
                     <h1>MÁS DE 15 AÑOS DE EXPERIENCIA A SU SERVICIO</h1>
-                    <p class="descripcion">DDR S.A. DE C.V. es una empresa fundada en la ciudad de Mérida, Yucatán en Marzo del 2008.  Nuestra experiencia en desarrollo de proyectos incluye: Diseño y construcción de casa habitación unifamiliar, Diseño y construcción de casa habitación multifamiliar (flat, dúplex y loft), Mantenimiento de casa habitación y edificios corporativos, Construcción de baños ecológicos en comunidades rurales,
-                        Construcción, re acondicionamiento y mantenimiento de escuelas; así como proyectos de infraestructura de seguridad.</p>
+                    <p class="descripcion">DDR S.A. DE C.V. es una empresa fundada en la ciudad de Mérida, Yucatán en
+                        Marzo del 2008. Nuestra experiencia en desarrollo de proyectos incluye: Diseño y construcción de
+                        casa habitación unifamiliar, Diseño y construcción de casa habitación multifamiliar (flat,
+                        dúplex y loft), Mantenimiento de casa habitación y edificios corporativos, Construcción de baños
+                        ecológicos en comunidades rurales,
+                        Construcción, re acondicionamiento y mantenimiento de escuelas; así como proyectos de
+                        infraestructura de seguridad.</p>
                     <div>
-                        <button class="btn btn-primary">Contactar ahora</button>
+                        {{-- <button class="btn btn-primary">Contactar ahora</button> --}}
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Contactar ahora
+                        </button>
                     </div>
                     <div class="cv">
                         <div class="bullet">
@@ -51,14 +59,20 @@
                             <img src="{{ asset('img/grua.svg') }}" width="40" alt="">
                             <div class="work__info">
                                 <h4>MISIÓN.</h4>
-                                <p class="descripcion">Ejecutar cada proyecto en tiempo, forma y con la calidad esperada por nuestros clientes, para ser en todo momento acreedores de su confianza y referencia. Para ello creemos en mantener siempre equipos de trabajo comprometidos, con buena actitud y una adecuada cultura del servicio y la atención. </p>
+                                <p class="descripcion">Ejecutar cada proyecto en tiempo, forma y con la calidad esperada
+                                    por nuestros clientes, para ser en todo momento acreedores de su confianza y
+                                    referencia. Para ello creemos en mantener siempre equipos de trabajo comprometidos,
+                                    con buena actitud y una adecuada cultura del servicio y la atención. </p>
                             </div>
                         </div>
                         <div class="work">
                             <img src="{{ asset('img/edificio.svg') }}" width="40" alt="">
                             <div class="work__info">
                                 <h4>VISIÓN.</h4>
-                                <p class="descripcion">Ser el socio ideal de nuestros clientes para el desarrollo de sus proyectos de construcción e infraestructura, reconocida por su buen trabajo, respaldo de sus socios, colaboradores y aliados; que busca siempre la innovación en sus procesos para mantener finanzas sanas y una buena rentabilidad. </p>
+                                <p class="descripcion">Ser el socio ideal de nuestros clientes para el desarrollo de sus
+                                    proyectos de construcción e infraestructura, reconocida por su buen trabajo,
+                                    respaldo de sus socios, colaboradores y aliados; que busca siempre la innovación en
+                                    sus procesos para mantener finanzas sanas y una buena rentabilidad. </p>
                             </div>
                         </div>
                         <x-cta />
@@ -78,7 +92,7 @@
                         Yucatan <br> Tropical Property
                     </x-slot>
                     <x-slot name="obracivildescripcion">
-                        Diseño y construcción “llave en mano” de complejo habitacional y turístico de más e 2,000  mts2
+                        Diseño y construcción “llave en mano” de complejo habitacional y turístico de más e 2,000 mts2
                     </x-slot>
                     <x-slot name="tipodeproyecto">
                         construcción de <br> edificio multifamiliar
@@ -95,7 +109,8 @@
                         Junta de Agua Potable y Alcantarillado de Yucatán
                     </x-slot>
                     <x-slot name="obracivildescripcion">
-                        Construcción de 180 sanitarios rurales, incluyendo instalaciones sanitarias, hidráulicas y eléctricas, en diversas localidades del Estado de Yucatán.
+                        Construcción de 180 sanitarios rurales, incluyendo instalaciones sanitarias, hidráulicas y
+                        eléctricas, en diversas localidades del Estado de Yucatán.
                     </x-slot>
                     <x-slot name="tipodeproyecto">
                         Construcción de sanitarios rurales
@@ -112,7 +127,8 @@
                         IDEFEY
                     </x-slot>
                     <x-slot name="obracivildescripcion">
-                        Rehabilitación de aulas, incluyendo paredes, techos, pisos, accesos para discapacitados, instalaciones eléctricas y de aire acondicionado.
+                        Rehabilitación de aulas, incluyendo paredes, techos, pisos, accesos para discapacitados,
+                        instalaciones eléctricas y de aire acondicionado.
                     </x-slot>
                     <x-slot name="tipodeproyecto">
                         Mejoramiento de escuela primaria.
@@ -128,7 +144,8 @@
                         Ayuntamiento <br> de Mérida
                     </x-slot>
                     <x-slot name="obracivildescripcion">
-                        Demolición de baños anteriores, reconstrucción y rehabilitación de baños, incluyendo obra civil, instalaciones sanitarias, hidráulicas y eléctricas.
+                        Demolición de baños anteriores, reconstrucción y rehabilitación de baños, incluyendo obra civil,
+                        instalaciones sanitarias, hidráulicas y eléctricas.
                     </x-slot>
                     <x-slot name="tipodeproyecto">
                         Remodelación de baños en Mercados Municipales ubicados en diversas localidades
@@ -149,7 +166,7 @@
                 </button>
 
                 <div class="ornament d-none d-sm-none d-md-none d-lg-block">
-                    <img src="{{asset('img/Ornament.png')}}" width="200" alt="">
+                    <img src="{{ asset('img/Ornament.png') }}" width="200" alt="">
                 </div>
     </section>
 
@@ -159,7 +176,8 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 m-auto pb-5">
                     <div class="contenido">
                         <h2> PROYECTOS DE <br> INFRAESTRUCTURA</h2>
-                        <p>De igual manera hemos desarrollado diversos proyectos de infraestructura de voz y datos, audio y video.</p>
+                        <p>De igual manera hemos desarrollado diversos proyectos de infraestructura de voz y datos,
+                            audio y video.</p>
                         <div class="cta">
                             <x-cta />
                         </div>
@@ -170,7 +188,8 @@
                         <div class="obra">
                             <x-obra>
                                 <x-slot name="descripcionobra">
-                                    Desarrollo de Ingeniería y Construcción de infraestructura para soportar y operar el sistema de Video Vigilancia y Control de Acceso.
+                                    Desarrollo de Ingeniería y Construcción de infraestructura para soportar y operar el
+                                    sistema de Video Vigilancia y Control de Acceso.
 
                                 </x-slot>
                                 <x-slot name="tituloobra">
@@ -184,7 +203,8 @@
                         <div class="obra">
                             <x-obra>
                                 <x-slot name="descripcionobra">
-                                    Canalización ductería eléctrica, voz y datos para el edificio de la LITOTECA NACIONAL ubicado en el Parque Científico y Tecnológico de Yucatán
+                                    Canalización ductería eléctrica, voz y datos para el edificio de la LITOTECA
+                                    NACIONAL ubicado en el Parque Científico y Tecnológico de Yucatán
                                 </x-slot>
                                 <x-slot name="tituloobra">
                                     <b>Litoteca Nacional</b>
@@ -197,7 +217,8 @@
                         <div class="obra">
                             <x-obra>
                                 <x-slot name="descripcionobra">
-                                    Instalación de ductería y nodos para red de voz y datos, audio y video; instalación de circuitos eléctricos, certificación de la red.
+                                    Instalación de ductería y nodos para red de voz y datos, audio y video; instalación
+                                    de circuitos eléctricos, certificación de la red.
                                 </x-slot>
                                 <x-slot name="tituloobra">
                                     <b>PEMEX</b>
@@ -210,7 +231,8 @@
                         <div class="obra">
                             <x-obra>
                                 <x-slot name="descripcionobra">
-                                    Suministro e instalación de cableado estructurado en el edificio, centro de datos y sitios.
+                                    Suministro e instalación de cableado estructurado en el edificio, centro de datos y
+                                    sitios.
                                 </x-slot>
                                 <x-slot name="tituloobra">
                                     <b>Instituto Tecnológico Superior de Comalcalco.</b>
@@ -223,11 +245,10 @@
                     </div>
 
                     <button aria-label="anterior" class="carrusel__anterior">
-                        <
-                    </button>
-                    <button aria-label="siguiente" class="carrusel__siguiente">
-                        >
-                    </button>
+                        < </button>
+                            <button aria-label="siguiente" class="carrusel__siguiente">
+                                >
+                            </button>
 
 
                 </div>
@@ -243,7 +264,8 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 contenido m-auto">
                     <div class="elemento">
                         <h5>Dirección</h5>
-                        <p><a href="https://maps.app.goo.gl/Cc2HYr14wFx2TsoN8">Calle 43 # 203 entre 48 y 50, <br> Col Benito Juárez Norte, CP 97119. Mérida, Yucatán</a></p>
+                        <p><a href="https://maps.app.goo.gl/Cc2HYr14wFx2TsoN8">Calle 43 # 203 entre 48 y 50, <br> Col
+                                Benito Juárez Norte, CP 97119. Mérida, Yucatán</a></p>
                     </div>
                     <div class="elemento">
                         <h5>Email</h5>
@@ -307,6 +329,43 @@
             <hr>
             <div class="copyright">
                 DDR PROYECTOS © TODOS LOS DERECHOS RESERVADOS
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="{{ route('send.form') }}" method="POST">
+                            @csrf
+                            @method('POST')
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" placeholder="nombre" name="nombre">
+                                <label for="nombre">Nombre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" placeholder="empresa" name="empresa">
+                                <label for="empresa">Empresa</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" placeholder="telefono" name="telefono">
+                                <label for="telefono">Telefono</label>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
